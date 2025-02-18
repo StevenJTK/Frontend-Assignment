@@ -1,1 +1,8 @@
-<p>about works!</p>
+
+<div *ngFor="let character of characters">
+    <p>Name: {{ character.name }}</p>
+    <p>Power: {{ character.power }}</p>
+    <p>Age: {{ character.age }}</p>
+    <p>Are they evil? {{ character.isEvil }}</p>
+    <p>Are they an Avenger? {{ character.isAvenger }}</p>
+</div>
