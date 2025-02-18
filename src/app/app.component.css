@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    background-color: #536878;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+    
+
+}
