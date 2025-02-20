@@ -7,3 +7,14 @@
     <p>Are they evil? {{ character.isEvil }}</p>
     <p>Are they an Avenger? {{ character.isAvenger }}</p>
 </div>
+
+<div *ngFor="let character of evilCharacters ">
+    <p>Who is evil?</p>
+    <p>Name: {{character.name}}</p>
+</div>
+
+<div *ngFor="let character of avengerCharacters">
+    <p>Who is an Avenger?</p>
+    <p>Name: {{character.name}}</p>
+
+</div>

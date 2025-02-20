@@ -51,3 +51,11 @@ const Loki: Character = {
 export function getCharacters(): Character[] {
   return [MoonKnight, Storm, Loki]
 }
+
+export function areTheyEvil(isEvil: boolean, getCharacters: Character[] ) {
+  return getCharacters.filter(character => character.isEvil === isEvil)
+}
+
+export function areTheyAvengers(isAvenger: boolean, getCharacters: Character[] ) {
+  return getCharacters.filter(character => character.isAvenger === isAvenger)
+}

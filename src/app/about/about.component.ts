@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Character } from '../models/character';
-import { getCharacters } from '../heroes/heroes.component';
+import { areTheyAvengers, getCharacters } from '../heroes/heroes.component';
 import { CommonModule } from '@angular/common';
-import { NgModel } from '@angular/forms';
-import { AppComponent } from '../app.component';
-import { ButtonComponent } from '../button/button.component';
-import { BrowserModule } from '@angular/platform-browser';
+import { areTheyEvil } from '../heroes/heroes.component';
 
 
 @Component({
@@ -18,8 +15,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 export class AboutComponent implements OnInit {
   characters: Character[] = [];
+  evilCharacters: Character[] = [];
+  avengerCharacters: Character[] = [];
 
   ngOnInit(): void {
     this.characters = getCharacters();
+    this.evilCharacters = areTheyEvil(true, this.characters);
+    this.avengerCharacters = areTheyAvengers(true, this.characters);
   }
 }
