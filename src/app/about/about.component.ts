@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { Character } from '../models/character';
 import { getCharacters } from '../heroes/heroes.component';
 import { CommonModule } from '@angular/common';
+import { NgModel } from '@angular/forms';
+import { AppComponent } from '../app.component';
+import { ButtonComponent } from '../button/button.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @Component({
@@ -11,6 +14,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
+
+
 export class AboutComponent implements OnInit {
   characters: Character[] = [];
 
@@ -18,5 +23,3 @@ export class AboutComponent implements OnInit {
     this.characters = getCharacters();
   }
 }
-
-

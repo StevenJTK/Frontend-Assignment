@@ -22,6 +22,7 @@ export class HeroesComponent {
 
 const MoonKnight: Character = {
   name: "Marc Spector",
+  title: "Moon Knight",
   power: "Blessed by Khonsu",
   age: 37,
   isEvil: false,
@@ -30,6 +31,7 @@ const MoonKnight: Character = {
 
 const Storm: Character = {
   name: "Ororo Munroe",
+  title: "Storm",
   power: "Weather Control",
   age: 32,
   isEvil: false,
@@ -38,6 +40,7 @@ const Storm: Character = {
 
 const Loki: Character = {
   name: "Loki Laufeyson",
+  title: "Loki",
   power: "Trickster God",
   age: 1050,
   isEvil: true,
