@@ -1,13 +1,15 @@
 <body>
     <main>
-        <section class="welcomeSection">
-            <h1>Welcome!</h1>
-            <p>Test</p>
-            <p>More test</p>
-            <p>Final test</p>
-            <p>Hey look, a button!</p>
-            <app-button buttonMessage="Yo!"(clicked)="addToCount()"></app-button>
-            <p>Value of count is: {{count}}</p>
+        <section class="welcomeBanner">
+            <h1>Welcome</h1>
+            <article class="welcomeText">
+                <p>Hey look, a button!</p>
+            </article>
+            </section>
+        <section class="homeButton">
+            <app-button buttonMessage="Click me or else"(clicked)="addToCount()"></app-button>
+            <p>You clicked the magic button {{count}} times</p>
+            
         </section>
     </main>
 </body>

@@ -1,20 +1,29 @@
-
-<div *ngFor="let character of characters">
-    <p>Name: {{ character.name }}</p>
-    <p>Alias: {{character.title}}</p>
-    <p>Power: {{ character.power }}</p>
-    <p>Age: {{ character.age }}</p>
-    <p>Are they evil? {{ character.isEvil }}</p>
-    <p>Are they an Avenger? {{ character.isAvenger }}</p>
-</div>
-
-<div *ngFor="let character of evilCharacters ">
-    <p>Who is evil?</p>
-    <p>Name: {{character.name}}</p>
-</div>
-
-<div *ngFor="let character of avengerCharacters">
-    <p>Who is an Avenger?</p>
-    <p>Name: {{character.name}}</p>
-
-</div>
+<body>
+    <main>
+        <section class="heroesBanner">
+            <h1>Heroes</h1>
+            <p>This page contains certain Marvel characters and their traits.</p>
+        </section>
+        
+        <section class="characterAttributes">
+            <div *ngFor="let character of characters">
+                <h3>Name: {{ character.name }} ({{character.title}})</h3>
+                <p>Power: {{ character.power }} | Age: {{character.age}}</p>
+                <p>Are they evil? {{ character.isEvil }}</p>
+                <p>Are they an Avenger? {{ character.isAvenger }}</p>
+            </div>
+            </section>
+            <section class="evilCharacters">
+                <div *ngFor="let character of evilCharacters ">
+                    <h4>Who is evil out of everyone?</h4>
+                    <p>{{character.name}}</p>
+                </div>
+                </section>
+                <section class="avengerCharacters">
+                    <div *ngFor="let character of avengerCharacters">
+                        <h4>Who is an Avenger out of everyone?</h4>
+                        <p>{{character.name}}</p>
+                    </div>
+                </section>
+    </main>
+</body>
